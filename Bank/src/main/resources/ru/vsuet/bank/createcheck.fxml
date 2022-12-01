@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vsuet.bank.Createcheck">
+   <children>
+      <TextField layoutX="74.0" layoutY="74.0" promptText="Введите номер счета" />
+      <Label layoutX="82.0" layoutY="30.0" text="Создание счета" textFill="#b913a9" underline="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="createCheckButton" layoutX="101.0" layoutY="126.0" mnemonicParsing="false" text="Создать счет" />
+   </children>
+</AnchorPane>
