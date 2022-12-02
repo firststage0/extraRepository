@@ -1,16 +1,17 @@
 package ru.vsuet.bank;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Functions {
     DBHandler dbHandler = new DBHandler();
-
-    /*public DBHandler getDbHandler() {
-        return dbHandler;
-    }*/
-
     public ResultSet getUser(User user){
         ResultSet resSet = null;
 
@@ -47,4 +48,5 @@ public class Functions {
             e.printStackTrace();
         }
     }
+
 }

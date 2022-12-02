@@ -33,6 +33,12 @@
             <Image url="@../../../../java/assets/homeicon.png" />
          </image>
       </ImageView>
-      <Button fx:id="inHomeButton" layoutX="697.0" layoutY="442.0" mnemonicParsing="false" text="Home" />
+      <Button fx:id="inHomeButton" layoutX="697.0" layoutY="442.0" mnemonicParsing="false" text="Выйти" />
+      <Button fx:id="createCheckButton" layoutX="40.0" layoutY="134.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" style="-fx-background-color: #9371d9; -fx-border-color: #000000;" text="Создать счет" textFill="WHITE" />
+      <Button fx:id="getHistoryOperationButton" layoutX="551.0" layoutY="134.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" style="-fx-background-color: #9371d9; -fx-border-color: #000000;" text="Получить историю операций" textFill="WHITE" />
+      <Button fx:id="deleteCheckButton" layoutX="296.0" layoutY="134.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" style="-fx-background-color: #9371d9; -fx-border-color: #000000;" text="Удалить Счет" textFill="WHITE" />
+      <Button fx:id="getMoneyButton" layoutX="296.0" layoutY="229.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" style="-fx-background-color: #9371d9; -fx-border-color: #000000;" text="Снять сумму" textFill="WHITE" />
+      <Button fx:id="addMoneyButton" layoutX="40.0" layoutY="229.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" style="-fx-background-color: #9371d9; -fx-border-color: #000000;" text="Добавить сумму" textFill="WHITE" />
+      <Button fx:id="moneyToCheckButton" layoutX="551.0" layoutY="229.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" style="-fx-background-color: #9371d9; -fx-border-color: #000000;" text="Передать сумму на другой счет" textFill="WHITE" />
     </children>
 </AnchorPane>

@@ -24,6 +24,24 @@ public class AppMain extends Controller{
 
     @FXML
     private URL location;
+
+    @FXML
+    private Button addMoneyButton;
+
+    @FXML
+    private Button createCheckButton;
+
+    @FXML
+    private Button deleteCheckButton;
+
+    @FXML
+    private Button getHistoryOperationButton;
+
+    @FXML
+    private Button getMoneyButton;
+
+    @FXML
+    private Button moneyToCheckButton;
     @FXML
     private ImageView HomeButton;
     @FXML
@@ -31,12 +49,11 @@ public class AppMain extends Controller{
 
     @FXML
     void initialize() {
-        //DBHandler dbHandler = new DBHandler();
         AppUserName.setText(loginText);
-        inHomeButton.setOnAction(actionEvent -> {
-            inHomeButton.getScene().getWindow().hide();
 
+        inHomeButton.setOnAction(actionEvent -> {
             FXMLLoader loader = new FXMLLoader();
+            inHomeButton.getScene().getWindow().hide();
             loader.setLocation(getClass().getResource("/ru/vsuet/bank/mainwindow.fxml"));
 
             try{
@@ -44,12 +61,30 @@ public class AppMain extends Controller{
             }   catch (IOException e) {
                 e.printStackTrace();
             }
-
             Parent root = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.show();
         });
+
+        createCheckButton.setOnAction(actionEvent -> {
+            createCheckButton.getScene().getWindow().hide();
+            openNewScene();
+        });
+
     }
 
+    private void openNewScene() {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/ru/vsuet/bank/createcheck.fxml"));
+        try{
+            loader.load();
+        }   catch (IOException e) {
+            e.printStackTrace();
+        }
+        Parent root = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
 }

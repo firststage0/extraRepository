@@ -39,16 +39,18 @@ public class Controller {
     protected static String loginText;
     @FXML
     void initialize() {
-
+            //Записать все методы в одельный класс сервис( перенести методы на уровень безнесс логики)
         SignUpButton.setOnAction(actionEvent -> {
             loginText = login_field.getText().trim();
             String loginPassword = password_field.getText().trim();
 
             if(!loginText.equals("") && !password_field.equals("")){
                 loginUser(loginText, loginPassword);
+                SignUpButton.getScene().getWindow().hide();
             } else
                 System.out.println("Login and password is empty");
             RegisterButton.setOnAction(actionEvent1 -> {
+                RegisterButton.getScene().getWindow().hide();
                 openNewScene("/ru/vsuet/bank/registerwindow.fxml");
 
             });
@@ -71,8 +73,8 @@ public class Controller {
             stage.show();
         });
     }
+
     private void openNewScene(String window) {
-        RegisterButton.getScene().getWindow().hide();
 
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(window));
@@ -94,7 +96,6 @@ public class Controller {
         User user = new User();
         user.setUsername(loginText);
         user.setPassword(loginPassword);
-        //dbHandler.getUser(user);
 
         ResultSet result = functions.getUser(user);
 
