@@ -1,6 +1,8 @@
 package ru.vsuet.bank;
 
 public class User {
+
+    private Long id;
     private String firstname;
     private String lastname;
     private String username;
@@ -15,6 +17,11 @@ public class User {
 
     public User() {
 
+    }
+
+    public User(Long id, String firstname, String lastname, String username, String password) {
+        this(firstname, lastname, username, password);
+        this.id = id;
     }
 
     public String getFirstname() {

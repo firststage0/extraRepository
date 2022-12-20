@@ -30,7 +30,7 @@
             <Font size="19.0" />
         </font>
     </PasswordField>
-    <Button fx:id="SignUpButton" layoutX="284.0" layoutY="369.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="232.0" style="-fx-background-color: #a87697; -fx-background-radius: 452; -fx-border-color: #000000; -fx-border-radius: 452;" text="Зарегистрироваться" textFill="WHITE">
+    <Button fx:id="signUpButton" layoutX="284.0" layoutY="369.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="232.0" style="-fx-background-color: #a87697; -fx-background-radius: 452; -fx-border-color: #000000; -fx-border-radius: 452;" text="Зарегистрироваться" textFill="WHITE">
         <font>
             <Font name="Century Gothic Italic" size="18.0" />
         </font>
@@ -40,16 +40,16 @@
           <Font size="19.0" />
         </font>
     </TextField>
-    <TextField fx:id="FirstNameField" layoutX="445.0" layoutY="180.0" prefHeight="40.0" prefWidth="288.0" promptText="Имя">
+    <TextField fx:id="firstNameField" layoutX="445.0" layoutY="180.0" prefHeight="40.0" prefWidth="288.0" promptText="Имя">
         <font>
           <Font size="19.0" />
         </font>
     </TextField>
-   <Label fx:id="UsernameAlreadyExists" layoutX="38.0" layoutY="147.0" prefHeight="24.0" prefWidth="269.0" text="проверка логина" textFill="RED" />
-   <ImageView fitHeight="58.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+   <Label fx:id="usernameAlreadyExists" layoutX="38.0" layoutY="147.0" prefHeight="24.0" prefWidth="269.0" text="проверка логина" textFill="RED" />
+   <ImageView fitHeight="58.0" fitWidth="69.0" layoutX="699.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@../../../../java/assets/homeicon.png" />
       </image>
    </ImageView>
-   <Button fx:id="inHomeButton" layoutX="3.0" layoutY="67.0" mnemonicParsing="false" text="Button" />
+   <Button fx:id="inHomeButton" layoutX="702.0" layoutY="443.0" mnemonicParsing="false" style="-fx-background-color: #9371d9; -fx-border-color: #000000;" text="Домой" textFill="#fffefe" />
 </AnchorPane>

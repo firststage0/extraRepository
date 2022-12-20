@@ -5,8 +5,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="200.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vsuet.bank.CreateCheck">
+<AnchorPane prefHeight="200.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vsuet.bank.CreateCheck">
    <children>
       <TextField fx:id="checkNumber" layoutX="74.0" layoutY="74.0" promptText="Введите номер счета" />
       <Label layoutX="82.0" layoutY="30.0" text="Создание счета" textFill="#b913a9" underline="true">
@@ -15,5 +16,6 @@
          </font>
       </Label>
       <Button fx:id="createCheckButton" layoutX="101.0" layoutY="126.0" mnemonicParsing="false" text="Создать счет" />
+      <Text fx:id="checkAlreadyExistText" fill="RED" layoutX="61.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="167.0" />
    </children>
 </AnchorPane>

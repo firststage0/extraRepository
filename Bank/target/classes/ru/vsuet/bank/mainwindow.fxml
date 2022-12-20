@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vsuet.bank.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vsuet.bank.Controller">
    <children>
       <Label layoutX="570.0" layoutY="14.0" prefHeight="53.0" prefWidth="216.0" style="-fx-background-color: #9371d9; -fx-border-color: #000000;" text=" НеАльфа-Банк">
          <font>
@@ -35,7 +35,7 @@
       </Label>
       <Circle fill="DODGERBLUE" layoutX="723.0" layoutY="437.0" radius="49.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ab8ee6;" />
       <Circle fill="DODGERBLUE" layoutX="73.0" layoutY="58.0" radius="31.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #ab8ee6;" />
-      <Button fx:id="RegisterButton" layoutX="594.0" layoutY="90.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="178.0" style="-fx-background-color: #a87697; -fx-background-radius: 452; -fx-border-color: #000000; -fx-border-radius: 452;" text="Зарегистрироваться" textFill="WHITE">
+      <Button fx:id="registerButton" layoutX="594.0" layoutY="90.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="178.0" style="-fx-background-color: #a87697; -fx-background-radius: 452; -fx-border-color: #000000; -fx-border-radius: 452;" text="Зарегистрироваться" textFill="WHITE">
          <font>
             <Font name="Century Gothic Italic" size="15.0" />
          </font>
@@ -55,7 +55,7 @@
             <Font size="19.0" />
          </font>
       </PasswordField>
-      <Button fx:id="SignUpButton" layoutX="296.0" layoutY="379.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="178.0" style="-fx-background-color: #a87697; -fx-background-radius: 452; -fx-border-color: #000000; -fx-border-radius: 452;" text="Войти" textFill="WHITE">
+      <Button fx:id="signUpButton" layoutX="296.0" layoutY="379.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="178.0" style="-fx-background-color: #a87697; -fx-background-radius: 452; -fx-border-color: #000000; -fx-border-radius: 452;" text="Войти" textFill="WHITE">
          <font>
             <Font name="Century Gothic Italic" size="30.0" />
          </font>
